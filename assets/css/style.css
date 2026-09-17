@@ -72,13 +72,15 @@ p { margin: 0 0 1em; color: var(--text-muted); }
   height: 76px;
   gap: 24px;
 }
-.logo {
-  font-size: 22px;
+.logo { display: inline-flex; align-items: center; gap: 10px; }
+.logo img { height: 44px; width: auto; display: block; }
+.logo span {
+  font-size: 21px;
   font-weight: 800;
   color: var(--navy);
   letter-spacing: -.5px;
 }
-.logo span { color: var(--orange); }
+.logo b { color: var(--orange); font-weight: 800; }
 .main-nav {
   display: flex;
   gap: 28px;
@@ -375,10 +377,10 @@ p { margin: 0 0 1em; color: var(--text-muted); }
   padding-bottom: 48px;
   border-bottom: 1px solid rgba(255,255,255,.1);
 }
-.site-footer .logo { color: #fff; }
+.site-footer .logo img { height: 60px; }
 .footer-grid p { color: #b7c3d1; font-size: 14px; margin-top: 12px; max-width: 280px; }
 .footer-grid h4 { color: #fff; font-size: 14px; margin: 0 0 16px; }
-.footer-grid li { margin-bottom: 10px; }
+.footer-grid li { margin-bottom: 10px; color: #b7c3d1; font-size: 14px; }
 .footer-grid a { color: #b7c3d1; font-size: 14px; transition: color .15s; }
 .footer-grid a:hover { color: var(--orange); }
 .footer-bottom { padding: 22px 0; text-align: center; }
