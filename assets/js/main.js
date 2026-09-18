@@ -101,7 +101,28 @@ if (baSlider) {
     stopBaDemo();
     setBaPos(baRange.value, false);
   });
-  baRange.addEventListener('pointerdown', stopBaDemo);
+
+  // Tap or click anywhere on the image to jump the slider there, drag to move it
+  function posFromEvent(e) {
+    const rect = baSlider.getBoundingClientRect();
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    const x = clientX - rect.left;
+    return Math.min(100, Math.max(0, (x / rect.width) * 100));
+  }
+  let dragging = false;
+  baSlider.addEventListener('pointerdown', (e) => {
+    e.preventDefault();
+    stopBaDemo();
+    dragging = true;
+    setBaPos(posFromEvent(e), false);
+    baSlider.setPointerCapture(e.pointerId);
+  });
+  baSlider.addEventListener('pointermove', (e) => {
+    if (!dragging) return;
+    setBaPos(posFromEvent(e), false);
+  });
+  baSlider.addEventListener('pointerup', () => { dragging = false; });
+  baSlider.addEventListener('pointercancel', () => { dragging = false; });
 
   if ('IntersectionObserver' in window) {
     const baIo = new IntersectionObserver((entries) => {
@@ -115,6 +136,20 @@ if (baSlider) {
     baIo.observe(baSlider);
   } else {
     runBaDemo();
+  }
+}
+
+// Category strip: hide the scroll-sideways hint once the user reaches the end
+const categoryRow = document.querySelector('.category-row');
+const categoryHint = document.querySelector('.category-scroll-hint');
+if (categoryRow && categoryHint) {
+  if (categoryRow.scrollWidth <= categoryRow.clientWidth + 4) {
+    categoryHint.style.display = 'none';
+  } else {
+    categoryRow.addEventListener('scroll', () => {
+      const atEnd = categoryRow.scrollLeft + categoryRow.clientWidth >= categoryRow.scrollWidth - 8;
+      categoryHint.classList.toggle('is-hidden', atEnd);
+    }, { passive: true });
   }
 }
 
