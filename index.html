@@ -17,8 +17,7 @@
 <header class="site-header" id="top">
   <div class="container header-inner">
     <a href="#top" class="logo">
-      <img src="assets/img/logo-icon.png" alt="">
-      <span>Pro<b>Build</b>81</span>
+      <img src="assets/img/logo.png" alt="ProBuild81">
     </a>
     <nav class="main-nav" id="mainNav">
       <a href="#uslugi">Услуги</a>
@@ -40,48 +39,185 @@
   </div>
 </header>
 
-<section class="hero">
+<section class="hero" id="top-hero">
+  <div class="hero-media">
+    <img src="https://picsum.photos/seed/pb101/1800/1100" alt="">
+    <div class="hero-overlay"></div>
+  </div>
   <div class="container hero-inner">
-    <div class="hero-copy">
-      <span class="eyebrow">Довършителни ремонти · Бани · Покриви</span>
-      <h1>Довършваме проекти, на които можете да разчитате.</h1>
-      <p>ProBuild81 изгражда и обновява домове в цяла България — от цялостни довършителни ремонти, през модерни бани, до надеждни покривни системи. Безплатен оглед и оферта до 24 часа.</p>
-      <div class="hero-badges">
-        <span>★ 4.8 среден рейтинг</span>
-        <span>300+ завършени обекта</span>
-        <span>Гаранция до 5 години</span>
-      </div>
-    </div>
+    <h1>На когото имате доверие,<br>за да довърши работата.</h1>
+    <p>ProBuild81, вашият доверен партньор в строително-ремонтните дейности, предлага персонализирани решения за вашия дом и офис. С ясни договори, спазване на сроковете и високо качество, нашият екип гарантира пълна прозрачност и удовлетвореност на клиента.</p>
 
-    <form class="quote-card" id="quoteForm">
-      <h3>Получете безплатна оферта</h3>
-      <label>
-        Име и фамилия
-        <input type="text" name="name" placeholder="Иван Иванов" required>
-      </label>
-      <label>
-        Телефон
-        <input type="tel" name="phone" placeholder="08XX XXX XXX" required>
-      </label>
-      <label>
-        Вид услуга
-        <select name="service" required>
-          <option value="" disabled selected>Изберете услуга</option>
-          <option>Довършителни ремонти</option>
-          <option>Ремонт на баня</option>
-          <option>Покривни услуги</option>
-          <option>Кухня</option>
-          <option>Фасада и изолация</option>
-          <option>Друго</option>
-        </select>
-      </label>
-      <label>
-        Град / населено място
-        <input type="text" name="city" placeholder="напр. Пловдив">
-      </label>
-      <button type="submit" class="btn btn-primary btn-block">Заяви безплатна оферта</button>
-      <p class="quote-note">Отговаряме до 24 часа. Без ангажимент.</p>
+    <form class="hero-search" id="heroSearchForm">
+      <select name="service" required>
+        <option value="" disabled selected>С какво да помогнем?</option>
+        <option>Довършителни ремонти</option>
+        <option>Боядисване</option>
+        <option>Замазки и плочки</option>
+        <option>Ремонт на баня</option>
+        <option>Покривни услуги</option>
+        <option>Ремоделиране</option>
+        <option>Фасада и изолация</option>
+        <option>Електро</option>
+        <option>ВиК</option>
+        <option>Друго</option>
+      </select>
+      <span class="hero-search-divider"></span>
+      <input type="text" name="city" placeholder="Град / адрес">
+      <button type="submit">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span>Намери майстор</span>
+      </button>
     </form>
+
+    <div class="hero-badges">
+      <span>★ 4.8 среден рейтинг</span>
+      <span>300+ завършени обекта</span>
+      <span>Гаранция до 5 години</span>
+    </div>
+  </div>
+</section>
+
+<section class="category-strip">
+  <div class="container">
+    <div class="category-row">
+      <a class="category-item reveal" href="#uslugi" data-service="Довършителни ремонти">
+        <span class="category-icon">
+          <svg viewBox="0 0 48 48"><rect x="20" y="18" width="8" height="26" rx="2" fill="#E4551F"/><path d="M14 6h16a4 4 0 014 4v6a4 4 0 01-4 4H14a4 4 0 01-4-4v-6a4 4 0 014-4z" fill="#FF6B35"/></svg>
+        </span>
+        <span>Довършителни</span>
+      </a>
+      <a class="category-item reveal" href="#uslugi" data-service="Боядисване">
+        <span class="category-icon">
+          <svg viewBox="0 0 48 48"><rect x="6" y="6" width="30" height="13" rx="6" fill="#FF6B35"/><rect x="24" y="19" width="6" height="6" fill="#E4551F"/><path d="M27 25 L38 41" stroke="#E4551F" stroke-width="5" stroke-linecap="round"/><circle cx="39" cy="43" r="3.5" fill="#E4551F"/></svg>
+        </span>
+        <span>Боядисване</span>
+      </a>
+      <a class="category-item reveal" href="#uslugi" data-service="Замазки и плочки">
+        <span class="category-icon">
+          <svg viewBox="0 0 48 48"><rect x="5" y="5" width="16" height="16" rx="2" fill="#FF6B35"/><rect x="25" y="5" width="18" height="16" rx="2" fill="#E4551F"/><rect x="5" y="25" width="16" height="18" rx="2" fill="#E4551F"/><rect x="25" y="25" width="18" height="18" rx="2" fill="#FF6B35"/></svg>
+        </span>
+        <span>Замазки/плочки</span>
+      </a>
+      <a class="category-item reveal" href="#uslugi" data-service="Ремонт на баня">
+        <span class="category-icon">
+          <svg viewBox="0 0 48 48"><path d="M6 26h36a2 2 0 012 2v2a10 10 0 01-10 10H14A10 10 0 014 30v-2a2 2 0 012-2z" fill="#FF6B35"/><path d="M10 26v-6a6 6 0 016-6h2" stroke="#E4551F" stroke-width="3.4" stroke-linecap="round" fill="none"/><circle cx="12" cy="14" r="2.4" fill="#E4551F"/><rect x="10" y="32" width="28" height="4" rx="2" fill="#E4551F"/></svg>
+        </span>
+        <span>Бани</span>
+      </a>
+      <a class="category-item reveal" href="#uslugi" data-service="Покривни услуги">
+        <span class="category-icon">
+          <svg viewBox="0 0 48 48"><path d="M12 24v16h24V24" fill="#FF6B35"/><path d="M4 24L24 7l20 17h-8l-12-10-12 10H4z" fill="#E4551F"/></svg>
+        </span>
+        <span>Покриви</span>
+      </a>
+      <a class="category-item reveal" href="#uslugi" data-service="Ремоделиране">
+        <span class="category-icon">
+          <svg viewBox="0 0 48 48"><g transform="rotate(45 24 24)"><rect x="21" y="4" width="6" height="28" rx="3" fill="#FF6B35"/><rect x="17" y="2" width="14" height="10" rx="3" fill="#E4551F"/></g><g transform="rotate(-45 24 24)"><rect x="21" y="16" width="6" height="28" rx="3" fill="#E4551F"/><rect x="19" y="12" width="10" height="8" rx="2" fill="#FF6B35"/></g></svg>
+        </span>
+        <span>Ремоделиране</span>
+      </a>
+      <a class="category-item reveal" href="#uslugi" data-service="Фасада и изолация">
+        <span class="category-icon">
+          <svg viewBox="0 0 48 48"><rect x="9" y="7" width="30" height="35" rx="2" fill="#FF6B35"/><g fill="#E4551F"><rect x="14" y="13" width="6" height="6" rx="1"/><rect x="28" y="13" width="6" height="6" rx="1"/><rect x="14" y="23" width="6" height="6" rx="1"/><rect x="28" y="23" width="6" height="6" rx="1"/><rect x="20" y="33" width="8" height="9"/></g></svg>
+        </span>
+        <span>Фасади</span>
+      </a>
+      <a class="category-item reveal" href="#uslugi" data-service="Електро">
+        <span class="category-icon">
+          <svg viewBox="0 0 48 48"><path d="M26 4L10 28h10l-4 16 20-26H26l4-14z" fill="#FF6B35"/><path d="M26 4L19 17h7l-2 6 3-5h-6l4-14z" fill="#E4551F"/></svg>
+        </span>
+        <span>Електро</span>
+      </a>
+      <a class="category-item reveal" href="#uslugi" data-service="ВиК">
+        <span class="category-icon">
+          <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6l-3 3-4.3-4.3C.4 7.1.8 10.1 2.8 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.5-2.5c.4-.4.4-1 0-1.4z" fill="#FF6B35"/><circle cx="19.5" cy="21" r="1.6" fill="#E4551F"/></svg>
+        </span>
+        <span>ВиК</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="offers-strip">
+  <div class="container">
+    <div class="section-head offers-head">
+      <h2>Оферти започващи от:</h2>
+    </div>
+    <div class="offers-grid">
+      <a class="offer-card reveal" href="#kontakti" data-service="Покривни услуги">
+        <span class="offer-icon">
+          <svg viewBox="0 0 48 48"><path d="M12 24v16h24V24" fill="#FF6B35"/><path d="M4 24L24 7l20 17h-8l-12-10-12 10H4z" fill="#E4551F"/></svg>
+        </span>
+        <div class="offer-info">
+          <h3>Цялостно нов покрив</h3>
+          <div class="offer-meta"><span class="offer-rating">★ 4.7</span> <span class="offer-count">(613+)</span> <span class="offer-sep">|</span> <span class="offer-price">75 €/м²</span></div>
+        </div>
+      </a>
+      <a class="offer-card reveal" href="#kontakti" data-service="Ремонт на баня">
+        <span class="offer-icon">
+          <svg viewBox="0 0 48 48"><path d="M6 26h36a2 2 0 012 2v2a10 10 0 01-10 10H14A10 10 0 014 30v-2a2 2 0 012-2z" fill="#FF6B35"/><path d="M10 26v-6a6 6 0 016-6h2" stroke="#E4551F" stroke-width="3.4" stroke-linecap="round" fill="none"/><circle cx="12" cy="14" r="2.4" fill="#E4551F"/><rect x="10" y="32" width="28" height="4" rx="2" fill="#E4551F"/></svg>
+        </span>
+        <div class="offer-info">
+          <h3>Нова баня</h3>
+          <div class="offer-meta"><span class="offer-rating">★ 4.9</span> <span class="offer-count">(86+)</span> <span class="offer-sep">|</span> <span class="offer-price">от 2000 €</span></div>
+        </div>
+      </a>
+      <a class="offer-card reveal" href="#kontakti" data-service="Замазки и плочки">
+        <span class="offer-icon">
+          <svg viewBox="0 0 48 48"><rect x="5" y="5" width="16" height="16" rx="2" fill="#FF6B35"/><rect x="25" y="5" width="18" height="16" rx="2" fill="#E4551F"/><rect x="5" y="25" width="16" height="18" rx="2" fill="#E4551F"/><rect x="25" y="25" width="18" height="18" rx="2" fill="#FF6B35"/></svg>
+        </span>
+        <div class="offer-info">
+          <h3>Замазки и мазилки</h3>
+          <div class="offer-meta"><span class="offer-rating">★ 4.8</span> <span class="offer-count">(240+)</span> <span class="offer-sep">|</span> <span class="offer-price">от 10 €/м²</span></div>
+        </div>
+      </a>
+      <a class="offer-card reveal" href="#kontakti" data-service="Фасада и изолация">
+        <span class="offer-icon">
+          <svg viewBox="0 0 48 48"><rect x="9" y="7" width="30" height="35" rx="2" fill="#FF6B35"/><g fill="#E4551F"><rect x="14" y="13" width="6" height="6" rx="1"/><rect x="28" y="13" width="6" height="6" rx="1"/><rect x="14" y="23" width="6" height="6" rx="1"/><rect x="28" y="23" width="6" height="6" rx="1"/><rect x="20" y="33" width="8" height="9"/></g></svg>
+        </span>
+        <div class="offer-info">
+          <h3>Фасадни мазилки и изолация</h3>
+          <div class="offer-meta"><span class="offer-rating">★ 4.8</span> <span class="offer-count">(61+)</span> <span class="offer-sep">|</span> <span class="offer-price">30 €/м²</span></div>
+        </div>
+      </a>
+      <a class="offer-card reveal" href="#kontakti" data-service="Боядисване">
+        <span class="offer-icon">
+          <svg viewBox="0 0 48 48"><rect x="6" y="6" width="30" height="13" rx="6" fill="#FF6B35"/><rect x="24" y="19" width="6" height="6" fill="#E4551F"/><path d="M27 25 L38 41" stroke="#E4551F" stroke-width="5" stroke-linecap="round"/><circle cx="39" cy="43" r="3.5" fill="#E4551F"/></svg>
+        </span>
+        <div class="offer-info">
+          <h3>Боядисване</h3>
+          <div class="offer-meta"><span class="offer-rating">★ 4.6</span> <span class="offer-count">(150+)</span> <span class="offer-sep">|</span> <span class="offer-price">2 €/м²</span></div>
+        </div>
+      </a>
+      <a class="offer-card reveal" href="#kontakti" data-service="Довършителни ремонти">
+        <span class="offer-icon">
+          <svg viewBox="0 0 48 48"><rect x="20" y="18" width="8" height="26" rx="2" fill="#E4551F"/><path d="M14 6h16a4 4 0 014 4v6a4 4 0 01-4 4H14a4 4 0 01-4-4v-6a4 4 0 014-4z" fill="#FF6B35"/></svg>
+        </span>
+        <div class="offer-info">
+          <h3>Довършителни ремонти</h3>
+          <div class="offer-meta"><span class="offer-rating">★ 4.9</span> <span class="offer-count">(112+)</span> <span class="offer-sep">|</span> <span class="offer-price">по договаряне</span></div>
+        </div>
+      </a>
+      <a class="offer-card reveal" href="#kontakti" data-service="Друго">
+        <span class="offer-icon">
+          <svg viewBox="0 0 48 48"><rect x="6" y="14" width="6" height="28" fill="#FF6B35"/><rect x="21" y="10" width="6" height="32" fill="#FF6B35"/><rect x="36" y="14" width="6" height="28" fill="#FF6B35"/><rect x="4" y="20" width="40" height="5" fill="#E4551F"/><rect x="4" y="32" width="40" height="5" fill="#E4551F"/></svg>
+        </span>
+        <div class="offer-info">
+          <h3>Поправяне на ограда</h3>
+          <div class="offer-meta"><span class="offer-rating">★ 4.5</span> <span class="offer-count">(98+)</span> <span class="offer-sep">|</span> <span class="offer-price">от 25 €/л.м.</span></div>
+        </div>
+      </a>
+      <a class="offer-card reveal" href="#kontakti" data-service="ВиК">
+        <span class="offer-icon">
+          <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6l-3 3-4.3-4.3C.4 7.1.8 10.1 2.8 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.5-2.5c.4-.4.4-1 0-1.4z" fill="#FF6B35"/><circle cx="19.5" cy="21" r="1.6" fill="#E4551F"/></svg>
+        </span>
+        <div class="offer-info">
+          <h3>Вътрешно и външно ВиК</h3>
+          <div class="offer-meta"><span class="offer-rating">★ 4.7</span> <span class="offer-count">(140+)</span> <span class="offer-sep">|</span> <span class="offer-price">от 15 €/точка</span></div>
+        </div>
+      </a>
+    </div>
   </div>
 </section>
 
@@ -92,45 +228,63 @@
       <p>Пълен спектър от довършителни и строителни услуги — от идея до финален приемо-предавателен протокол.</p>
     </div>
     <div class="services-grid">
-      <a class="service-card" href="#proekti">
-        <span class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M14 4l6 6-9 9-6 1 1-6 8-8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-        </span>
+      <a class="service-card reveal" href="#kontakti" data-service="Довършителни ремонти">
+        <div class="service-photo">
+          <div class="service-photo-media"><img src="https://picsum.photos/seed/pb189/500/360" alt="" loading="lazy"></div>
+          <span class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M14 4l6 6-9 9-6 1 1-6 8-8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </span>
+        </div>
         <h3>Довършителни ремонти</h3>
-        <p>Замазки, шпакловки, боядисване, гипсокартон, подови настилки.</p>
+        <p>Боядисване, гипсокартон, подови настилки.</p>
       </a>
-      <a class="service-card" href="#proekti">
-        <span class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M6 12V6a2 2 0 012-2h2M4 16a4 4 0 004 4h8a4 4 0 004-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-        </span>
+      <a class="service-card reveal" href="#kontakti" data-service="Замазки и плочки">
+        <div class="service-photo">
+          <div class="service-photo-media"><img src="https://picsum.photos/seed/pb76/500/360" alt="" loading="lazy"></div>
+          <span class="service-icon">
+            <svg viewBox="0 0 48 48"><rect x="5" y="5" width="16" height="16" rx="2" fill="currentColor"/><rect x="25" y="5" width="18" height="16" rx="2" fill="currentColor" opacity=".7"/><rect x="5" y="25" width="16" height="18" rx="2" fill="currentColor" opacity=".7"/><rect x="25" y="25" width="18" height="18" rx="2" fill="currentColor"/></svg>
+          </span>
+        </div>
+        <h3>Замазки и плочки</h3>
+        <p>Фаянс, теракот, гипсокартон, замазки за стени и подове.</p>
+      </a>
+      <a class="service-card reveal" href="#kontakti" data-service="Ремонт на баня">
+        <div class="service-photo">
+          <div class="service-photo-media"><img src="assets/img/before-after-after.jpg" alt="" loading="lazy"></div>
+          <span class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M6 12V6a2 2 0 012-2h2M4 16a4 4 0 004 4h8a4 4 0 004-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </span>
+        </div>
         <h3>Ремонт на бани</h3>
         <p>Хидроизолация, плочки, санитария, обзавеждане до ключ.</p>
       </a>
-      <a class="service-card" href="#proekti">
-        <span class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M3 11l9-7 9 7M5 10v10h14V10" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-        </span>
+      <a class="service-card reveal" href="#kontakti" data-service="Покривни услуги">
+        <div class="service-photo">
+          <div class="service-photo-media"><img src="https://picsum.photos/seed/pb192/500/360" alt="" loading="lazy"></div>
+          <span class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M3 11l9-7 9 7M5 10v10h14V10" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </span>
+        </div>
         <h3>Покривни услуги</h3>
         <p>Нови покриви, ремонт, хидроизолация и топлоизолация.</p>
       </a>
-      <a class="service-card" href="#proekti">
-        <span class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M4 21V9l8-6 8 6v12M9 21v-6h6v6" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-        </span>
-        <h3>Кухни</h3>
-        <p>Проектиране и монтаж на модерни, функционални кухни.</p>
-      </a>
-      <a class="service-card" href="#proekti">
-        <span class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M4 9h16M9 9v11" stroke="currentColor" stroke-width="1.6"/></svg>
-        </span>
+      <a class="service-card reveal" href="#kontakti" data-service="Фасада и изолация">
+        <div class="service-photo">
+          <div class="service-photo-media"><img src="https://picsum.photos/seed/pb172/500/360" alt="" loading="lazy"></div>
+          <span class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M4 9h16M9 9v11" stroke="currentColor" stroke-width="1.6"/></svg>
+          </span>
+        </div>
         <h3>Фасади и изолация</h3>
         <p>Топлоизолационни системи и обновяване на фасади.</p>
       </a>
-      <a class="service-card" href="#proekti">
-        <span class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-        </span>
+      <a class="service-card reveal" href="#kontakti" data-service="Друго">
+        <div class="service-photo">
+          <div class="service-photo-media"><img src="https://picsum.photos/seed/pb193/500/360" alt="" loading="lazy"></div>
+          <span class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </span>
+        </div>
         <h3>Електро и ВиК</h3>
         <p>Пълна или частична подмяна на инсталации.</p>
       </a>
@@ -138,12 +292,47 @@
   </div>
 </section>
 
+<section class="before-after">
+  <div class="container ba-layout">
+    <div class="ba-slider" id="baSlider">
+      <div class="ba-img ba-after">
+        <img src="assets/img/before-after-after.jpg" alt="След ремонта">
+      </div>
+      <div class="ba-img ba-before" id="baBefore">
+        <img src="assets/img/before-after-before.png" alt="Преди ремонта">
+      </div>
+      <span class="ba-label ba-label-before">Преди</span>
+      <span class="ba-label ba-label-after">След</span>
+      <div class="ba-divider" id="baDivider">
+        <span class="ba-handle">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M8 7L3 12l5 5M16 7l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </div>
+      <input type="range" min="0" max="100" value="50" class="ba-range" id="baRange" aria-label="Плъзгач преди/след">
+    </div>
+    <div class="ba-copy">
+      <span class="eyebrow">Реален обект на ProBuild81</span>
+      <h2>Преди и след</h2>
+      <p>Плъзнете снимката, за да видите пътя от суров гипсокартон до напълно завършена баня.</p>
+      <p>Този тип обект изисква прецизност на всеки етап — една пропусната стъпка в хидроизолацията или замазката може да компрометира целия резултат. Затова работим по строга последователност:</p>
+      <ul class="ba-steps">
+        <li><strong>Груб етап:</strong> монтаж на влагоустойчив гипсокартон, ел. и ВиК разводка зад стените.</li>
+        <li><strong>Хидроизолация:</strong> пълна защита на подове и стени преди полагане на плочки.</li>
+        <li><strong>Замазка и нивелация:</strong> подготовка на идеално равна основа за плочките.</li>
+        <li><strong>Облицовка:</strong> прецизно фугиране и подравняване на всяка плочка.</li>
+        <li><strong>Монтаж на арматура:</strong> душ система, смесители и финални детайли.</li>
+      </ul>
+      <p class="ba-note">Целият процес отнема средно 10–15 работни дни, в зависимост от площта и сложността на банята.</p>
+    </div>
+  </div>
+</section>
+
 <section class="stats">
   <div class="container stats-grid">
-    <div class="stat"><span class="stat-bar bar-1"></span><div><strong>15+</strong><p>години опит</p></div></div>
-    <div class="stat"><span class="stat-bar bar-2"></span><div><strong>300+</strong><p>завършени обекта</p></div></div>
-    <div class="stat"><span class="stat-bar bar-3"></span><div><strong>50+</strong><p>обучени майстори</p></div></div>
-    <div class="stat"><span class="stat-bar bar-4"></span><div><strong>5 год.</strong><p>гаранция на всеки обект</p></div></div>
+    <div class="stat reveal"><span class="stat-bar bar-1"></span><div><strong>15+</strong><p>години опит</p></div></div>
+    <div class="stat reveal"><span class="stat-bar bar-2"></span><div><strong>300+</strong><p>завършени обекта</p></div></div>
+    <div class="stat reveal"><span class="stat-bar bar-3"></span><div><strong>50+</strong><p>обучени майстори</p></div></div>
+    <div class="stat reveal"><span class="stat-bar bar-4"></span><div><strong>5 год.</strong><p>гаранция на всеки обект</p></div></div>
   </div>
 </section>
 
@@ -155,8 +344,8 @@
     </div>
     <div class="projects-grid">
 
-      <article class="project-card">
-        <div class="project-img"><img src="https://picsum.photos/seed/probuild-bath1/640/440" alt="Ремонт на баня" loading="lazy"></div>
+      <article class="project-card reveal">
+        <div class="project-img"><img src="https://picsum.photos/seed/pb41/640/440" alt="Ремонт на баня" loading="lazy"></div>
         <div class="project-body">
           <span class="tag">Баня</span>
           <h3>Цялостен ремонт на баня, 5 кв.м</h3>
@@ -165,8 +354,8 @@
         </div>
       </article>
 
-      <article class="project-card">
-        <div class="project-img"><img src="https://picsum.photos/seed/probuild-roof1/640/440" alt="Покривни услуги" loading="lazy"></div>
+      <article class="project-card reveal">
+        <div class="project-img"><img src="https://picsum.photos/seed/pb31/640/440" alt="Покривни услуги" loading="lazy"></div>
         <div class="project-body">
           <span class="tag">Покрив</span>
           <h3>Смяна на покривна конструкция и керемиди</h3>
@@ -175,8 +364,8 @@
         </div>
       </article>
 
-      <article class="project-card">
-        <div class="project-img"><img src="https://picsum.photos/seed/probuild-reno1/640/440" alt="Довършителни ремонти" loading="lazy"></div>
+      <article class="project-card reveal">
+        <div class="project-img"><img src="https://picsum.photos/seed/pb4/640/440" alt="Довършителни ремонти" loading="lazy"></div>
         <div class="project-body">
           <span class="tag">Довършителни</span>
           <h3>Цялостен довършителен ремонт, апартамент 85 кв.м</h3>
@@ -185,18 +374,8 @@
         </div>
       </article>
 
-      <article class="project-card">
-        <div class="project-img"><img src="https://picsum.photos/seed/probuild-kitchen1/640/440" alt="Кухня" loading="lazy"></div>
-        <div class="project-body">
-          <span class="tag">Кухня</span>
-          <h3>Модерна кухня по поръчка с монтаж</h3>
-          <div class="rating">★★★★☆ <span>4.7 (39 отзива)</span></div>
-          <p class="price">от 4 800 лв</p>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <div class="project-img"><img src="https://picsum.photos/seed/probuild-facade1/640/440" alt="Фасада" loading="lazy"></div>
+      <article class="project-card reveal">
+        <div class="project-img"><img src="https://picsum.photos/seed/pb36/640/440" alt="Фасада" loading="lazy"></div>
         <div class="project-body">
           <span class="tag">Фасада</span>
           <h3>Топлоизолация и облицовка на фасада</h3>
@@ -205,8 +384,8 @@
         </div>
       </article>
 
-      <article class="project-card">
-        <div class="project-img"><img src="https://picsum.photos/seed/probuild-bath2/640/440" alt="Баня втори проект" loading="lazy"></div>
+      <article class="project-card reveal">
+        <div class="project-img"><img src="https://picsum.photos/seed/pb20/640/440" alt="Баня втори проект" loading="lazy"></div>
         <div class="project-body">
           <span class="tag">Баня</span>
           <h3>Баня с вградено осветление и подово отопление</h3>
@@ -226,22 +405,22 @@
       <p>Прозрачен процес от първия разговор до финалния приемо-предавателен протокол.</p>
     </div>
     <div class="process-grid">
-      <div class="process-step">
+      <div class="process-step reveal">
         <span class="step-num">1</span>
         <h3>Безплатен оглед</h3>
         <p>Идваме на обекта, обсъждаме визията и бюджета ви.</p>
       </div>
-      <div class="process-step">
+      <div class="process-step reveal">
         <span class="step-num">2</span>
         <h3>Оферта и договор</h3>
         <p>Получавате детайлна оферта, срокове и писмен договор.</p>
       </div>
-      <div class="process-step">
+      <div class="process-step reveal">
         <span class="step-num">3</span>
         <h3>Изпълнение</h3>
         <p>Екипът ни работи по график, с редовна комуникация с вас.</p>
       </div>
-      <div class="process-step">
+      <div class="process-step reveal">
         <span class="step-num">4</span>
         <h3>Приемане и гаранция</h3>
         <p>Приемо-предавателен протокол и до 5 години гаранция.</p>
@@ -256,15 +435,15 @@
       <h2>Какво казват клиентите</h2>
     </div>
     <div class="testimonials-grid">
-      <blockquote class="testimonial">
+      <blockquote class="testimonial reveal">
         <p>“ProBuild81 ремонтираха банята ни за 10 дни, точно както бе обещано. Изключително чисто и професионално изпълнение.”</p>
         <footer>— Мария К., София</footer>
       </blockquote>
-      <blockquote class="testimonial">
+      <blockquote class="testimonial reveal">
         <p>“Смениха покрива на къщата ни само за седмица, въпреки лошото време. Ще ги препоръчам на всички съседи.”</p>
         <footer>— Георги Д., Пловдив</footer>
       </blockquote>
-      <blockquote class="testimonial">
+      <blockquote class="testimonial reveal">
         <p>“Довършителните работи в новия ни апартамент бяха на много високо ниво — спазени срокове и бюджет.”</p>
         <footer>— Ивелина С., Варна</footer>
       </blockquote>
@@ -279,24 +458,24 @@
       <p>Отговори на най-честите въпроси преди да стартирате своя проект.</p>
     </div>
     <div class="guides-grid">
-      <article class="guide-card">
-        <img src="https://picsum.photos/seed/probuild-guide1/500/320" alt="" loading="lazy">
+      <article class="guide-card reveal">
+        <img src="https://picsum.photos/seed/pb28/500/320" alt="" loading="lazy">
         <div class="guide-body">
           <span class="guide-date">Актуализирано 2026</span>
           <h3>Колко струва ремонт на баня през 2026?</h3>
           <p>Разбивка на разходите по материали, труд и срокове.</p>
         </div>
       </article>
-      <article class="guide-card">
-        <img src="https://picsum.photos/seed/probuild-guide2/500/320" alt="" loading="lazy">
+      <article class="guide-card reveal">
+        <img src="https://picsum.photos/seed/pb2/500/320" alt="" loading="lazy">
         <div class="guide-body">
           <span class="guide-date">Актуализирано 2026</span>
           <h3>5 признака, че покривът ви се нуждае от ремонт</h3>
           <p>Как да разпознаете проблема, преди да се влоши.</p>
         </div>
       </article>
-      <article class="guide-card">
-        <img src="https://picsum.photos/seed/probuild-guide3/500/320" alt="" loading="lazy">
+      <article class="guide-card reveal">
+        <img src="https://picsum.photos/seed/pb6/500/320" alt="" loading="lazy">
         <div class="guide-body">
           <span class="guide-date">Актуализирано 2026</span>
           <h3>Как да изберем материали за довършителни работи</h3>
@@ -309,12 +488,48 @@
 
 <section class="cta-banner" id="kontakti">
   <div class="container cta-inner">
-    <h2>Готови ли сте да започнете своя проект?</h2>
-    <p>Свържете се с нас за безплатен оглед и индивидуална оферта — без ангажимент.</p>
-    <div class="cta-actions">
-      <a href="tel:+359888123456" class="btn btn-white">Обадете се: +359 888 123 456</a>
-      <a href="mailto:info@probuild81.bg" class="btn btn-outline">info@probuild81.bg</a>
+    <div class="cta-copy">
+      <h2>Готови ли сте да започнете своя проект?</h2>
+      <p>Свържете се с нас за безплатен оглед и индивидуална оферта — без ангажимент.</p>
+      <div class="cta-actions">
+        <a href="tel:+359888123456" class="btn btn-white">Обадете се: +359 888 123 456</a>
+        <a href="mailto:info@probuild81.bg" class="btn btn-outline">info@probuild81.bg</a>
+      </div>
     </div>
+
+    <form class="quote-card" id="quoteForm">
+      <h3>Получете безплатна оферта</h3>
+      <label>
+        Име и фамилия
+        <input type="text" name="name" placeholder="Иван Иванов" required>
+      </label>
+      <label>
+        Телефон
+        <input type="tel" name="phone" placeholder="08XX XXX XXX" required>
+      </label>
+      <label>
+        Вид услуга
+        <select name="service" required>
+          <option value="" disabled selected>Изберете услуга</option>
+          <option>Довършителни ремонти</option>
+          <option>Боядисване</option>
+          <option>Замазки и плочки</option>
+          <option>Ремонт на баня</option>
+          <option>Покривни услуги</option>
+          <option>Ремоделиране</option>
+          <option>Фасада и изолация</option>
+          <option>Електро</option>
+          <option>ВиК</option>
+          <option>Друго</option>
+        </select>
+      </label>
+      <label>
+        Град / населено място
+        <input type="text" name="city" placeholder="напр. Пловдив">
+      </label>
+      <button type="submit" class="btn btn-primary btn-block">Заяви безплатна оферта</button>
+      <p class="quote-note">Отговаряме до 24 часа. Без ангажимент.</p>
+    </form>
   </div>
 </section>
 
@@ -330,7 +545,7 @@
         <li><a href="#uslugi">Довършителни ремонти</a></li>
         <li><a href="#uslugi">Ремонт на бани</a></li>
         <li><a href="#uslugi">Покривни услуги</a></li>
-        <li><a href="#uslugi">Кухни</a></li>
+        <li><a href="#uslugi">Фасади и изолация</a></li>
       </ul>
     </div>
     <div>
