@@ -1,27 +1,33 @@
-document.getElementById('year').textContent = new Date().getFullYear();
+const yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 const navToggle = document.getElementById('navToggle');
 const mainNav = document.getElementById('mainNav');
-navToggle.addEventListener('click', () => {
-  mainNav.classList.toggle('open');
-});
-mainNav.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => mainNav.classList.remove('open'));
-});
+if (navToggle && mainNav) {
+  navToggle.addEventListener('click', () => {
+    mainNav.classList.toggle('open');
+  });
+  mainNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => mainNav.classList.remove('open'));
+  });
+}
 
 const toast = document.getElementById('toast');
 function showToast(message) {
+  if (!toast) return;
   toast.textContent = message;
   toast.classList.add('show');
   setTimeout(() => toast.classList.remove('show'), 3500);
 }
 
 const quoteForm = document.getElementById('quoteForm');
-quoteForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  showToast('Благодарим ви! Ще се свържем с вас до 24 часа.');
-  quoteForm.reset();
-});
+if (quoteForm) {
+  quoteForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    showToast('Благодарим ви! Ще се свържем с вас до 24 часа.');
+    quoteForm.reset();
+  });
+}
 
 // Sticky header shadow on scroll
 const siteHeader = document.querySelector('.site-header');
@@ -49,28 +55,30 @@ if (navSections.some(Boolean)) {
 
 // Hero search bar: prefill the quote form and jump to it
 const heroSearchForm = document.getElementById('heroSearchForm');
-const quoteServiceSelect = quoteForm.querySelector('select[name="service"]');
-const quoteCitySelect = quoteForm.querySelector('input[name="city"]');
+const quoteServiceSelect = quoteForm ? quoteForm.querySelector('select[name="service"]') : null;
+const quoteCitySelect = quoteForm ? quoteForm.querySelector('input[name="city"]') : null;
 
 function prefillQuoteForm(service, city) {
-  if (service) quoteServiceSelect.value = service;
-  if (city) quoteCitySelect.value = city;
+  if (service && quoteServiceSelect) quoteServiceSelect.value = service;
+  if (city && quoteCitySelect) quoteCitySelect.value = city;
 }
 
-heroSearchForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const service = heroSearchForm.querySelector('select[name="service"]').value;
-  const city = heroSearchForm.querySelector('input[name="city"]').value;
-  prefillQuoteForm(service, city);
-  document.getElementById('kontakti').scrollIntoView({ behavior: 'smooth' });
-});
+if (heroSearchForm) {
+  heroSearchForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const service = heroSearchForm.querySelector('select[name="service"]').value;
+    const city = heroSearchForm.querySelector('input[name="city"]').value;
+    prefillQuoteForm(service, city);
+    document.getElementById('kontakti')?.scrollIntoView({ behavior: 'smooth' });
+  });
+}
 
 // Category strip: prefill the service and jump to the quote form
 document.querySelectorAll('.category-item[data-service]').forEach(item => {
   item.addEventListener('click', (e) => {
     e.preventDefault();
     prefillQuoteForm(item.dataset.service, '');
-    document.getElementById('kontakti').scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('kontakti')?.scrollIntoView({ behavior: 'smooth' });
   });
 });
 
