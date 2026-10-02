@@ -469,12 +469,16 @@ p { margin: 0 0 1em; color: var(--text-muted); }
 
 /* Before / after slider */
 .before-after { padding: 90px 0; background: #fdf1ea; }
+.before-after.before-after-alt { background: #fff; }
 .ba-layout {
   display: grid;
   grid-template-columns: .85fr 1fr;
   gap: 56px;
   align-items: center;
 }
+.ba-layout.ba-reverse { grid-template-columns: 1fr .85fr; }
+.ba-layout.ba-reverse .ba-slider { order: 2; }
+.ba-layout.ba-reverse .ba-copy { order: 1; }
 .ba-copy .eyebrow { color: var(--orange); }
 .ba-copy h2 { font-size: 30px; margin-top: 4px; }
 .ba-steps { margin: 20px 0; padding: 0; }
@@ -510,6 +514,7 @@ p { margin: 0 0 1em; color: var(--text-muted); }
   cursor: ew-resize;
   touch-action: pan-y;
 }
+.ba-slider.ba-slider-wide { max-width: 580px; aspect-ratio: 4/3; }
 .ba-img { position: absolute; inset: 0; border-radius: 6px; overflow: hidden; }
 .ba-img img {
   width: 100%;
@@ -819,7 +824,9 @@ p { margin: 0 0 1em; color: var(--text-muted); }
 @media (max-width: 980px) {
   .services-grid, .projects-grid, .testimonials-grid, .guides-grid, .offers-grid { grid-template-columns: repeat(2, 1fr); }
   .ba-layout { grid-template-columns: 1fr; }
+  .ba-layout.ba-reverse .ba-slider, .ba-layout.ba-reverse .ba-copy { order: 0; }
   .ba-slider { width: 100%; max-width: 440px; margin: 0 auto; }
+  .ba-slider.ba-slider-wide { aspect-ratio: 4/3; }
   .process-grid { grid-template-columns: repeat(2, 1fr); }
   .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 28px 20px; }
   .footer-grid { grid-template-columns: 1fr 1fr; }

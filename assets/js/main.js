@@ -87,12 +87,11 @@ document.querySelectorAll('.service-card[data-service], .offer-card[data-service
   card.addEventListener('click', () => prefillQuoteForm(card.dataset.service, ''));
 });
 
-// Before/after slider
-const baSlider = document.getElementById('baSlider');
-if (baSlider) {
-  const baRange = document.getElementById('baRange');
-  const baBefore = document.getElementById('baBefore');
-  const baDivider = document.getElementById('baDivider');
+// Before/after sliders (there can be more than one on a page)
+document.querySelectorAll('.ba-slider').forEach((baSlider) => {
+  const baRange = baSlider.querySelector('.ba-range');
+  const baBefore = baSlider.querySelector('.ba-before');
+  const baDivider = baSlider.querySelector('.ba-divider');
   let demoTimer = null;
 
   function setBaPos(val, animate) {
@@ -163,7 +162,7 @@ if (baSlider) {
   } else {
     runBaDemo();
   }
-}
+});
 
 // Category strip: hide the scroll-sideways hint once the user reaches the end
 const categoryRow = document.querySelector('.category-row');
