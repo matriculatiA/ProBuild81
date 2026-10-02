@@ -111,11 +111,10 @@ p { margin: 0 0 1em; color: var(--text-muted); }
   transform: translateY(-1px);
 }
 .main-nav a.is-active {
-  color: #fff;
-  background: var(--orange);
-  box-shadow: 0 8px 18px rgba(255,107,53,.35);
+  color: var(--orange-dark);
+  background: rgba(255,107,53,.12);
 }
-.main-nav a.is-active:hover { color: #fff; transform: none; }
+.main-nav a.is-active:hover { transform: none; }
 .header-actions { display: flex; align-items: center; gap: 20px; }
 .header-phone {
   display: flex;
@@ -431,7 +430,7 @@ p { margin: 0 0 1em; color: var(--text-muted); }
 .service-card p { margin: 0; font-size: 14px; color: #000; opacity: .75; }
 
 /* Before / after slider */
-.before-after { padding: 90px 0; background: var(--bg-alt); }
+.before-after { padding: 90px 0; background: #fdf1ea; }
 .ba-layout {
   display: grid;
   grid-template-columns: .85fr 1fr;
