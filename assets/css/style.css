@@ -154,7 +154,7 @@ p { margin: 0 0 1em; color: var(--text-muted); }
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(260deg, rgba(9,22,38,.92) 15%, rgba(9,22,38,.7) 45%, rgba(15,39,64,.35) 75%, rgba(15,39,64,.15) 100%);
+    linear-gradient(90deg, rgba(9,22,38,.92) 0%, rgba(9,22,38,.75) 30%, rgba(15,39,64,.3) 48%, rgba(15,39,64,0) 58%);
 }
 .hero-inner {
   max-width: 640px;
