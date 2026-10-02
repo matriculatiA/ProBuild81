@@ -575,7 +575,7 @@ p { margin: 0 0 1em; color: var(--text-muted); }
 .stat p { margin: 4px 0 0; color: #b7c3d1; font-size: 14px; }
 
 /* Projects */
-.projects { padding: 90px 0; background: var(--bg-alt); }
+.projects { padding: 90px 0; background: #fff; }
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
