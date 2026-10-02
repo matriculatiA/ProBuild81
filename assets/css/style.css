@@ -280,7 +280,7 @@ p { margin: 0 0 1em; color: var(--text-muted); }
 .category-icon svg, .category-icon img { width: 100%; height: 100%; object-fit: contain; }
 
 /* Offers strip (Angi-style popular projects) */
-.offers-strip { padding: 30px 0 70px; }
+.offers-strip { padding: 30px 0 32px; }
 .offers-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -374,7 +374,7 @@ p { margin: 0 0 1em; color: var(--text-muted); }
 .section-head.light p { color: #c9d4e0; }
 
 /* Services */
-.services-strip { padding: 90px 0; }
+.services-strip { padding: 56px 0 90px; }
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
