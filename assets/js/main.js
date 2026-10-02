@@ -29,6 +29,23 @@ const onScroll = () => siteHeader.classList.toggle('scrolled', window.scrollY > 
 onScroll();
 window.addEventListener('scroll', onScroll, { passive: true });
 
+// Nav scroll-spy: highlight the link for the section currently in view
+const navLinks = document.querySelectorAll('.main-nav a[href^="#"]');
+const navSections = Array.from(navLinks)
+  .map(link => document.querySelector(link.getAttribute('href')))
+  .filter(Boolean);
+if ('IntersectionObserver' in window && navSections.length) {
+  const navIo = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      navLinks.forEach(link => link.classList.remove('is-active'));
+      const activeLink = document.querySelector(`.main-nav a[href="#${entry.target.id}"]`);
+      if (activeLink) activeLink.classList.add('is-active');
+    });
+  }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+  navSections.forEach(section => navIo.observe(section));
+}
+
 // Hero search bar: prefill the quote form and jump to it
 const heroSearchForm = document.getElementById('heroSearchForm');
 const quoteServiceSelect = quoteForm.querySelector('select[name="service"]');
