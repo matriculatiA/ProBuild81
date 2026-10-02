@@ -469,7 +469,7 @@ p { margin: 0 0 1em; color: var(--text-muted); }
 
 /* Before / after slider */
 .before-after { padding: 90px 0; background: #fdf1ea; }
-.before-after.before-after-alt { background: #fff; }
+.before-after.before-after-alt { background: #eaf2fb; }
 .ba-layout {
   display: grid;
   grid-template-columns: .85fr 1fr;
