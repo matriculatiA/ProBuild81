@@ -468,7 +468,7 @@ p { margin: 0 0 1em; color: var(--text-muted); }
 .service-card p { margin: 0; font-size: 14px; }
 
 /* Before / after slider */
-.before-after { padding: 90px 0; background: #fdf1ea; }
+.before-after { padding: 90px 0; background: linear-gradient(180deg, #fdf1ea 0%, #fdf1ea 70%, #eaf2fb 100%); }
 .before-after.before-after-alt { background: #eaf2fb; }
 .ba-layout {
   display: grid;
