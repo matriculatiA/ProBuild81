@@ -393,7 +393,7 @@ p { margin: 0 0 1em; color: var(--text-muted); }
   box-shadow: var(--shadow);
   border-color: transparent;
 }
-.service-text { padding: 20px 20px 16px; }
+.service-text { padding: 20px 20px 16px; background: var(--orange); }
 .service-photo { position: relative; }
 .service-photo-media {
   aspect-ratio: 3/4;
@@ -424,8 +424,8 @@ p { margin: 0 0 1em; color: var(--text-muted); }
 }
 .service-icon svg { width: 22px; height: 22px; }
 .service-icon img { width: 100%; height: 100%; object-fit: contain; }
-.service-card h3 { font-size: 19px; margin: 0 0 6px; color: var(--text); }
-.service-card p { margin: 0; font-size: 14px; }
+.service-card h3 { font-size: 19px; margin: 0 0 6px; color: #000; }
+.service-card p { margin: 0; font-size: 14px; color: #000; opacity: .75; }
 
 /* Before / after slider */
 .before-after { padding: 90px 0; background: var(--bg-alt); }
