@@ -629,6 +629,8 @@ p { margin: 0 0 1em; color: var(--text-muted); }
   gap: 24px;
 }
 .project-card {
+  display: flex;
+  flex-direction: column;
   background: #fff;
   border-radius: var(--radius);
   overflow: hidden;
@@ -636,7 +638,7 @@ p { margin: 0 0 1em; color: var(--text-muted); }
   transition: transform .15s ease;
 }
 .project-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(15,39,64,.15); }
-.project-img { aspect-ratio: 4/2.7; overflow: hidden; }
+.project-img { margin-top: auto; aspect-ratio: 4/2.7; overflow: hidden; }
 .project-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; }
 .project-card:hover .project-img img { transform: scale(1.08); }
 .project-body { padding: 20px; }
