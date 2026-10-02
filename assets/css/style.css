@@ -17,7 +17,7 @@
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: 'Manrope', system-ui, -apple-system, sans-serif;
   color: var(--text);
   background: var(--bg);
   line-height: 1.55;
